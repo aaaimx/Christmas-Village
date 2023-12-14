@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/lights.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/snow.css')}}">
+    <!--
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lights.css" />
+    <link rel="stylesheet" href="snow.css" />
+    -->
+    <title>Christmas Village</title>
+  </head>
+  <body>
+    <div class="tpl-snow">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="lightrope">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <br />
+    <h1>AAAIMX'S CHRISTMAS VILLAGE</h1>
+    <div class="forms-container">
+      <form id="miFormulario" action="/procesar/0" method="post">
+        <h2>Casitas</h2>
+        <input type="text" id="texto" name="texto" required />
+        <br />
+        <input type="submit" value="Procesar" />
+      </form>
+      <form id="miFormulario" action="/procesar/1" method="post">
+        <h2>Carrusel</h2>
+        <input type="text" id="texto" name="texto" required />
+        <br />
+        <input type="submit" value="Procesar" />
+      </form>
+      <form id="miFormulario" action="/procesar/2" method="post">
+        <h2>Arbol</h2>
+        <input type="text" id="texto" name="texto" required />
+        <br />
+        <input type="submit" value="Procesar" />
+      </form>
+      <form id="miFormulario" action="/procesar/3" method="post">
+        <h2>Pc-bre</h2>
+        <input type="text" id="texto" name="texto" required />
+        <br />
+        <input type="submit" value="Procesar" />
+      </form>
+      <form id="miFormulario" action="/procesar/4" method="post">
+        <h2>Carrito</h2>
+        <input type="text" id="texto" name="texto" required />
+        <br />
+        <input type="submit" value="Procesar" />
+      </form>
+    </div>
+
+    <div class="btn-container">
+      <button class="estrella-btn" onclick="callPython()"></button>
+    </div>
+
+    <div class="organizations-container">
+      <img src="{{url_for('static',filename='assets/aaai-logo-transpeps.png')}}" alt="logo1">
+      <img src="{{url_for('static',filename='assets/aaaimx-white-2.png')}}" alt="logo1">
+      <img src="{{url_for('static',filename='assets/ACM_complet_transp_for_white.png')}}" alt="logo1">
+      <img src="{{url_for('static',filename='assets/ACM_CHAPTER.png')}}" alt="logo1">
+
+      <!--
+      <img src="assets/aaai-logo-transpeps.png" alt="logo1" />
+      <img src="assets/aaaimx-white-2.png" alt="logo3" />
+      <img src="assets/ACM_complet_transp_for_white.png" alt="logo4" />
+      <img src="assets/chapter-logo (1).jpg" alt="logo4" />
+      -->
+    </div>
+    <script>
+      function callPython() {
+        fetch("/estrella");
+      }
+    </script>
+  </body>
+</html>

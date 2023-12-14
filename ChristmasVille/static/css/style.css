@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mountains+of+Christmas:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Mountains of Christmas", serif;
+  font-size: 40px;
+}
+body {
+  background-color: #111;
+  overflow: hidden;
+}
+
+.forms-container {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+form {
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: green;
+}
+
+.estrella-btn {
+  width: 200px;
+  height: 200px;
+  background-color: #ffcc007d; /* Color de fondo de la estrella */
+  border: none;
+  position: relative;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.estrella-btn:hover {
+  background-color: #ffcc00;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}
+
+input[type="text"] {
+  width: 300px; /* Puedes ajustar el ancho según tus necesidades */
+  height: 20px; /* Puedes ajustar la altura según tus necesidades */
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  font-weight: 600;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  width: 200px; /* Puedes ajustar la altura según tus necesidades */
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: rgba(255, 99, 71, 0.6);
+  border-style: dashed;
+  cursor: pointer;
+  border-color: darkolivegreen;
+}
+
+input[type="submit"]:hover {
+  border-style: solid;
+}
+
+input[type="submit"]:focus {
+  background-color: rgba(255, 99, 71, 1);
+}
+
+.organizations-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.organizations-container img {
+  height: 110px; /* Establece la altura deseada para las imágenes */
+  margin-right: 10px;
+}
